@@ -1,0 +1,28 @@
+{
+  "rust-analyzer.linkedProjects": [
+    "apps/service/Cargo.toml",
+    "apps/service/migration/Cargo.toml"
+  ],
+  "rust-analyzer.showUnlinkedFileNotification": false,
+  "rust-analyzer.check.ignore": ["./apps/web/"],
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 2
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "always",
+    "source.fixAll.eslint": "always"
+  },
+  "editor.linkedEditing": true,
+  "protoc": {
+    "clang-format.style": "google",
+    "options": ["-I=~/.cache/buf/v1/module/data/buf.build"]
+  },
+  "typescript.tsdk": "./apps/web/node_modules/typescript/lib"
+}
